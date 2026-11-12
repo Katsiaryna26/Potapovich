@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#201b2b" />
+    <meta name="description" content="Интерактивный плакат о Владимире Владимировиче Потаповиче — воине-интернационалисте из Бобруйска." />
+    <title>Владимир Потапович — линия памяти</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="На главную"><span class="brand-mark">В</span><span class="brand-copy"><strong>ЛИНИЯ ПАМЯТИ</strong><small>интерактивный плакат</small></span></a>
+      <nav class="topnav" aria-label="Основная навигация"><a href="#story">История</a><a href="#timeline">Путь</a><a href="#gallery">Фотографии</a><a href="#legacy">Память</a></nav>
+      <span class="top-signature">БОБРУЙСК · 1961—1980</span>
+    </header>
+    <main id="top">
+      <button class="home-return" type="button" aria-label="Вернуться на главный экран"><span aria-hidden="true">←</span> Вернуться</button>
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> человек. мечта. память.</div>
+          <h1 id="hero-title">Владимир<br /><em>Потапович</em></h1>
+          <p class="hero-name">Владимирович</p>
+          <p class="hero-intro">Бобруйский парень, который любил спорт, технику, музыку и небо. Ему было всего девятнадцать, когда его жизнь оборвалась в Афганистане.</p>
+          <div class="hero-actions"><button class="button button-primary" type="button" data-open="story-modal">Узнать его историю <span class="button-arrow">↗</span></button><a class="text-link" href="#timeline">Пройти по годам <span>↓</span></a></div>
+          <div class="hero-facts"><div><strong>1961—1980</strong><span>годы жизни</span></div><div><strong>ВДВ</strong><span>служба в Афганистане</span></div><div><strong>19 лет</strong><span>возраст героя</span></div></div>
+        </div>
+        <div class="hero-art reveal reveal-delay" aria-label="Портрет Владимира Потаповича">
+          <div class="hero-sun"></div><div class="hero-rings ring-one"></div><div class="hero-rings ring-two"></div>
+          <div class="year-stamp">1979<br /><span>—</span><br />1980</div>
+          <div class="portrait-frame"><img class="portrait-photo" src="assets/potapovich-youth.jpg" alt="Владимир Потапович в юности" /><div class="portrait-wash"></div><div class="portrait-caption">Бобруйск помнит</div></div>
+          <div class="hero-emblem"><span class="emblem-star">✦</span><span class="emblem-label">память</span></div>
+          <p class="art-note">Имя, которое<br />не забывают.</p>
+        </div>
+      </section>
+      <section class="quote-band section-shell"><span class="quote-mark">“</span><p>Иногда вся судьба помещается в девятнадцать лет.<br /><em>Но память о человеке живёт гораздо дольше.</em></p><span class="quote-mark quote-mark-end">”</span></section>
+      <section class="story section-shell" id="story">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> личность</div><h2>Парень<br /><em>из Бобруйска</em></h2></div><p class="section-lead">Школа, спорт, музыка, любимая работа и мечта о небе — таким его запомнили близкие.</p></div>
+        <div class="story-grid">
+          <article class="story-card story-card-main"><div class="card-number">01</div><div class="card-icon icon-compass"><span></span></div><h3>Юность</h3><p>Учился в школе №14, занимался спортом, ходил в походы, любил природу, рыбалку и технику.</p><button class="card-link" type="button" data-open="youth-modal">Открыть историю <span>↗</span></button></article>
+          <article class="story-card story-card-accent"><div class="card-number">02</div><div class="card-icon icon-signal"><span></span><span></span><span></span></div><h3>Мечта о небе</h3><p>Занимался парашютным спортом в Бобруйском аэроклубе имени Слепнева.</p><button class="card-link" type="button" data-open="service-modal">Подробнее <span>↗</span></button></article>
+          <article class="story-card story-card-dark"><div class="card-number">03</div><div class="card-icon icon-star">✦</div><h3>Память</h3><p>Его имя хранят школа №28, боевые товарищи и жители Бобруйска.</p><button class="card-link light-link" type="button" data-open="memory-modal">Как его помнят <span>↗</span></button></article>
+        </div>
+      </section>
+      <section class="timeline-section" id="timeline"><div class="section-shell"><div class="section-heading timeline-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> маршрут жизни</div><h2>Путь,<br /><em>который стал историей</em></h2></div><p class="section-lead">Нажмите на год — карточка расскажет об этом этапе.</p></div>
+        <div class="timeline-wrap"><div class="timeline-line"><span class="timeline-progress"></span></div><div class="timeline-items" role="tablist" aria-label="Хронология Владимира Потаповича">
+          <button class="timeline-item is-active" role="tab" aria-selected="true" data-year="1961"><span class="timeline-dot"></span><span class="timeline-year">1961</span><span class="timeline-label">Начало</span></button>
+          <button class="timeline-item" role="tab" aria-selected="false" data-year="1978"><span class="timeline-dot"></span><span class="timeline-year">1978</span><span class="timeline-label">Первый труд</span></button>
+          <button class="timeline-item" role="tab" aria-selected="false" data-year="1979"><span class="timeline-dot"></span><span class="timeline-year">1979</span><span class="timeline-label">Афганистан</span></button>
+          <button class="timeline-item" role="tab" aria-selected="false" data-year="1980"><span class="timeline-dot"></span><span class="timeline-year">1980</span><span class="timeline-label">День памяти</span></button>
+        </div><div class="timeline-detail" aria-live="polite"><div class="detail-year" id="detail-year">1961</div><div class="detail-copy"><h3 id="detail-title">Начало пути</h3><p id="detail-text">1 апреля в Бобруйске родился Владимир Владимирович Потапович.</p></div><div class="detail-symbol" id="detail-symbol">✦</div></div></div>
+      </div></section>
+      <section class="gallery section-shell" id="gallery"><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> фотолетопись</div><h2>Лица и места<br /><em>его истории</em></h2></div><p class="section-lead">Архивные снимки и память, которую бережно хранят в Бобруйске.</p></div><div class="photo-grid">
+        <button class="photo-tile photo-large" type="button" data-photo="assets/potapovich-youth.jpg" data-caption="Владимир Потапович в юности"><img src="assets/potapovich-youth.jpg" alt="Портрет Владимира Потаповича" /><span>Юность Владимира</span></button>
+        <button class="photo-tile" type="button" data-photo="assets/extracted-jpg-02.jpg" data-caption="Фотография из презентации"><img src="assets/extracted-jpg-02.jpg" alt="Архивное фото из презентации" /><span>Из семейного архива</span></button>
+        <button class="photo-tile" type="button" data-photo="assets/extracted-jpg-03.jpg" data-caption="Фотография из презентации"><img src="assets/extracted-jpg-03.jpg" alt="Архивный снимок из презентации" /><span>Память города</span></button>
+        <button class="photo-tile" type="button" data-photo="assets/extracted-jpg-04.jpg" data-caption="Фотография из презентации"><img src="assets/extracted-jpg-04.jpg" alt="Материалы о Владимире Потаповиче" /><span>Страницы истории</span></button>
+      </div></section>
+      <section class="legacy section-shell" id="legacy"><div class="legacy-panel"><div class="legacy-seal"><span>В</span></div><div><div class="eyebrow"><span class="eyebrow-line"></span> эхо времени</div><h2>Память — это<br /><em>наша очередь</em></h2><p>Учащиеся школы №28 ухаживают за могилой Владимира. Пионерская дружина школы носит его имя.</p><button class="button button-light" type="button" data-open="memory-modal">Узнать о памяти героя <span class="button-arrow">↗</span></button></div></div></section>
+    </main>
+    <footer class="footer section-shell"><span>ВЛАДИМИР ВЛАДИМИРОВИЧ ПОТАПОВИЧ</span><span>ПАМЯТЬ ЖИВЁТ, ПОКА ЕЁ ПЕРЕДАЮТ</span><span class="footer-mark">✦</span></footer>
+    <button class="back-to-top" type="button" aria-label="Вернуться наверх" title="Наверх">↑<span>НАВЕРХ</span></button>
+    <div class="modal-layer" id="modal-layer" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Закрыть" data-close-modal>×</button><div class="modal-eyebrow" id="modal-eyebrow"></div><h2 id="modal-title"></h2><div class="modal-content" id="modal-content"></div></section></div>
+    <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" type="button" data-close-lightbox aria-label="Закрыть">×</button><img alt="" /><p></p><button class="lightbox-shade" data-close-lightbox aria-label="Закрыть фото"></button></div>
+    <script src="app.js"></script>
+  </body>
+</html>
